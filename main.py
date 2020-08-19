@@ -12,7 +12,7 @@ app = Flask(__name__)
 def makecalc():
     if (request.method == 'POST'):
         some_json = request.get_json()
-        return jsonify({'you sent' : some_joson})
+        return jsonify({'you sent' : some_json})
     
     else:
         return jsonify({"about" : 'Hello World!'})
