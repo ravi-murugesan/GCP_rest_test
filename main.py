@@ -8,7 +8,7 @@ import json
 app = Flask(__name__)
 
 
-@app.route('/', methods=['POST'])
+@app.route('/', methods = ['GET', 'POST'])
 def makecalc():
     if (request.method == 'POST'):
         some_json = request.get_json()
